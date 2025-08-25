@@ -9,7 +9,9 @@ jobs:
    name: Test
    runs-on: self-hosted
    steps:
-    - name: Install Dependencies
-      run: cd environment/dev
-    - name: Terraform init
-      run: terraform init
+   - name: Checkout
+     uses: actions/checkout@v5.0.0
+   - name: Install Dependencies
+     run: cd environment/dev
+   - name: Terraform init
+     run: terraform init
