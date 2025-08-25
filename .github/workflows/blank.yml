@@ -1,0 +1,13 @@
+on:
+ push:
+  branches:
+  - main
+  - feature/*
+
+jobs:
+ job: 
+   name: Test
+   runs-on: Bhavya Runner
+   steps:
+    - name: Install Dependencies
+      run: echo "bhavya"
