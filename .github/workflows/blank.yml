@@ -7,7 +7,7 @@ on:
 jobs:
  job: 
    name: Test
-   runs-on: Bhavya Runner
+   runs-on: self-hosted
    steps:
     - name: Install Dependencies
       run: echo "bhavya"
